@@ -8,7 +8,7 @@ const schema = mongoose.Schema({
                                    title: String,
                                    tweet: String,
                                    attachments: {
-                                       image: String
+                                       video: String
                                    },
                                    time: String,
                                    "logo-image": String,

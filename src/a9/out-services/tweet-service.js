@@ -35,6 +35,7 @@ module.exports = (app) => {
 
     const likeTweet = (req, res) => {
         const id = req.params['id'];
+        //console.log("like function")
         // let tweet = req.body;
         //
         //     if (tweet.liked === true) {
@@ -48,20 +49,25 @@ module.exports = (app) => {
         //
         // dao.updateTweet(req.params.id, tweet)
         // .then(status => res.send(tweet));
-
-
+        //console.log("tweet send from frontend")
+        //console.log(id)
         const tweet = dao.findTweetById(id)
             .then((tweet) => {
                 if (tweet.liked === true) {
+                    //console.log("if condition")
                     tweet.liked = false;
                     tweet.stats.likes--;
                 } else {
+                    //console.log("else condition")
                     tweet.liked = true;
                     tweet.stats.likes++;
                 }
+               // console.log("updating tweet")
+                //console.log(tweet)
                 dao.updateTweet(id, tweet)
                     .then(status => res.send(status));
             });
+        //console.log("tweet updated")
     }
 
     //
@@ -117,13 +123,7 @@ module.exports = (app) => {
     //     res.json(tweets);
     // }
     //
-    //
-    //
-    // const deleteTweet = (req, res) => {
-    //     const id = req.params['id'];
-    //     tweets = tweets.filter(tweet => tweet._id !== id);
-    //     res.sendStatus(200);
-    // }
+
 
     app.put('/api/tweets/:id/like', likeTweet);
     app.delete('/api/tweets/:id', deleteTweet);
