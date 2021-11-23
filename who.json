@@ -1,5 +1,36 @@
-{"_id":{"$oid":"619568b53ad83f0b12600e0a"},"avatarIcon":"/images/java.jpg","userName":"Java","handle":"Java"}
-{"_id":{"$oid":"619569263ad83f0b12600e0b"},"avatarIcon":"/images/relativity_space.jpg","userName":"Relativity Space","handle":"relativityspace"}
-{"_id":{"$oid":"6195692d3ad83f0b12600e0c"},"avatarIcon":"/images/virgin.jpg","userName":"Virgin Galactic","handle":"virgingalactic"}
-{"_id":{"$oid":"619569473ad83f0b12600e0d"},"avatarIcon":"/images/nasa.jpg","userName":"NASA","handle":"NASA"}
-{"_id":{"$oid":"6195694e3ad83f0b12600e0e"},"avatarIcon":"/images/tesla.jpg","userName":"Tesla","handle":"Tesla"}
+[{
+  "_id": {
+    "$oid": "619568b53ad83f0b12600e0a"
+  },
+  "avatarIcon": "/images/java.jpg",
+  "userName": "Java",
+  "handle": "Java"
+},{
+  "_id": {
+    "$oid": "619569263ad83f0b12600e0b"
+  },
+  "avatarIcon": "/images/relativity_space.jpg",
+  "userName": "Relativity Space",
+  "handle": "relativityspace"
+},{
+  "_id": {
+    "$oid": "6195692d3ad83f0b12600e0c"
+  },
+  "avatarIcon": "/images/virgin.jpg",
+  "userName": "Virgin Galactic",
+  "handle": "virgingalactic"
+},{
+  "_id": {
+    "$oid": "619569473ad83f0b12600e0d"
+  },
+  "avatarIcon": "/images/nasa.jpg",
+  "userName": "NASA",
+  "handle": "NASA"
+},{
+  "_id": {
+    "$oid": "6195694e3ad83f0b12600e0e"
+  },
+  "avatarIcon": "/images/tesla.jpg",
+  "userName": "Tesla",
+  "handle": "Tesla"
+}]
